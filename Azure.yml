@@ -1,3 +1,8 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
 trigger:
   - master
 
@@ -11,7 +16,10 @@ steps:
       connection: service1
   - script: |
       pip3 install pytest-playwright
-      python3 get_test_details_python_sample.py
+      playwright install
+
+  - script: "python3 get_test_details_python_sample.py"
+    displayName: "Command Line Script"
 
   - task: Lambdatest.lambda-azure-pipeline-extention.showResults-task.LambdatestResults@1
     displayName: "Lambdatest Results"
