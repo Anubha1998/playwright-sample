@@ -1,0 +1,17 @@
+trigger:
+  - master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: Lambdatest.lambda-azure-pipeline-extention.configuration-task.configuration@1
+    displayName: "LambdaTest configuration setup"
+    inputs:
+      connection: service1
+  - script: |
+      pip3 install pytest-playwright
+      python3 get_test_details_python_sample.py
+
+  - task: Lambdatest.lambda-azure-pipeline-extention.showResults-task.LambdatestResults@1
+    displayName: "Lambdatest Results"
