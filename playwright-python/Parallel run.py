@@ -15,7 +15,7 @@ capabilities = [
       'build': 'Playwright With Parallel Build',
       'name': 'Playwright Sample Test on Windows 10 - Chrome',
       'user': 'anubhas',
-      'accessKey': 'accesskey',
+      'accessKey': 'OmOOOshGyRoUgkriuFPDqahTb1fHdRHGXFPyStZb3BEXIQi1hg',
       'network': True,
       'video': True,
       'console': True
@@ -29,7 +29,7 @@ capabilities = [
       'build': 'Playwright With Parallel Build',
       'name': 'Playwright Sample Test on Windows 8 - MicrosoftEdge',
       'user': 'anubhas',
-      'accessKey':'accesskey',
+      'accessKey':'OmOOOshGyRoUgkriuFPDqahTb1fHdRHGXFPyStZb3BEXIQi1hg',
       'network': True,
       'video': True,
       'console': True
@@ -43,7 +43,7 @@ capabilities = [
       'build': 'Playwright With Parallel Build',
       'name': 'Playwright Sample Test on MacOS Big sur - Chrome',
       'user': 'anubhas',
-      'accessKey': 'accesskey',
+      'accessKey': 'OmOOOshGyRoUgkriuFPDqahTb1fHdRHGXFPyStZb3BEXIQi1hg',
       'network': True,
       'video': True,
       'console': True
